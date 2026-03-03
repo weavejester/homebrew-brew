@@ -3,17 +3,14 @@ class Cljfmt < Formula
   homepage "https://github.com/weavejester/cljfmt"
   version "${VERSION}"
 
-  if OS.linux?
+  on_linux do
     url "https://github.com/weavejester/cljfmt/releases/download/${VERSION}/cljfmt-${VERSION}-linux-amd64-static.tar.gz"
     sha256 "${LINUX_SHA}"
-  else
-    if Hardware::CPU.arm?
-      url "https://github.com/weavejester/cljfmt/releases/download/${VERSION}/cljfmt-${VERSION}-darwin-aarch64.tar.gz"
-      sha256 "${MACOS_ARM_SHA}"
-    else
-      url "https://github.com/weavejester/cljfmt/releases/download/${VERSION}/cljfmt-${VERSION}-darwin-amd64.tar.gz"
-      sha256 "${MACOS_AMD_SHA}"
-    end
+  end
+
+  on_macos do
+    url "https://github.com/weavejester/cljfmt/releases/download/${VERSION}/cljfmt-${VERSION}-darwin-aarch64.tar.gz"
+    sha256 "${MACOS_ARM_SHA}"
   end
 
   def install
