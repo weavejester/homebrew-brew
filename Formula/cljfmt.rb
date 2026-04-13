@@ -1,16 +1,16 @@
 class Cljfmt < Formula
   desc "A tool for formatting Clojure code"
   homepage "https://github.com/weavejester/cljfmt"
-  version "0.16.3"
+  version "0.16.4"
 
   on_linux do
-    url "https://github.com/weavejester/cljfmt/releases/download/0.16.3/cljfmt-0.16.3-linux-amd64-static.tar.gz"
-    sha256 "dff7cde3ff57e09a148359fe8598681bca6c27c8f67c7ff9a1cf8ec0aaecfe50"
+    url "https://github.com/weavejester/cljfmt/releases/download/0.16.4/cljfmt-0.16.4-linux-amd64-static.tar.gz"
+    sha256 "58466729a374f773d02a810e1c53a524c63dc00796573549785d1d7f6a283c7a"
   end
 
   on_macos do
-    url "https://github.com/weavejester/cljfmt/releases/download/0.16.3/cljfmt-0.16.3-darwin-aarch64.tar.gz"
-    sha256 "35222795a8dc3fdb6ea117912e7de205d4a142f90c741ed84f6f4b2b478a2310"
+    url "https://github.com/weavejester/cljfmt/releases/download/0.16.4/cljfmt-0.16.4-darwin-aarch64.tar.gz"
+    sha256 "475f779f1534c2a1113c10c12bc69b0e4c1c3f47d6f5f1d70037e1e75776c658"
   end
 
   def install
